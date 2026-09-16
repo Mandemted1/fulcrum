@@ -47,10 +47,10 @@ const ROWS: { label: string; value: React.ReactNode }[] = [
 
 export function Deadlines() {
   return (
-    <section id="deadlines" className="bg-ink px-6 py-24 text-paper md:px-16">
+    <section id="deadlines" className="bg-paper px-6 py-24 text-ink md:px-16">
       <div className="mx-auto max-w-3xl">
         <FadeUp>
-          <p className="text-label mb-6 text-brass">Time limits</p>
+          <p className="text-label mb-6 text-brass-dk">Time limits</p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
@@ -60,7 +60,7 @@ export function Deadlines() {
         </FadeUp>
 
         <FadeUp delay={0.15}>
-          <p className="text-body-lg mb-14 max-w-2xl text-paper/60">
+          <p className="text-body-lg mb-14 max-w-2xl text-ink/65">
             These are the deadlines that catch people out. They start
             running from the thing that happened, not from the day you
             decided to do something about it.
@@ -72,9 +72,9 @@ export function Deadlines() {
             {ROWS.map((row) => (
               <div
                 key={row.label}
-                className="flex flex-col gap-1 border-t border-rule py-5 md:flex-row md:items-baseline md:justify-between md:gap-6"
+                className="flex flex-col gap-1 border-t border-fog py-5 md:flex-row md:items-baseline md:justify-between md:gap-6"
               >
-                <dt className="text-body max-w-md text-paper/60">
+                <dt className="text-body max-w-md text-ink/65">
                   {row.label}
                 </dt>
                 <dd className="text-body-lg text-right md:text-right">
@@ -82,12 +82,12 @@ export function Deadlines() {
                 </dd>
               </div>
             ))}
-            <div className="border-t border-rule" />
+            <div className="border-t border-fog" />
           </dl>
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <p className="text-body mt-14 max-w-2xl text-paper/60">
+          <p className="text-body mt-14 max-w-2xl text-ink/65">
             If you&apos;re inside sixty days of any of these, call rather
             than email. These rules have exceptions and the exceptions have
             exceptions, so treat this as a prompt to ask, not as advice.

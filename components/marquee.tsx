@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type RefObject } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -19,6 +19,17 @@ interface MarqueeProps {
    */
   start?: string;
   end?: string;
+  /**
+   * Ties the scroll range to a different element than the marquee's own
+   * (small, word-height) wrapper — e.g. the whole surrounding section, so
+   * "end" can mean "the bottom of that section" rather than the bottom of
+   * the marquee's own tight box. Defaults to the marquee's own wrapper.
+   */
+  triggerRef?: RefObject<HTMLElement | null>;
+  /** Overrides the word's own type-scale class (default "text-marquee"). */
+  wordClassName?: string;
+  /** Ending xPercent the word transits to as the scroll range completes. */
+  toXPercent?: number;
 }
 
 export function Marquee({
@@ -26,18 +37,21 @@ export function Marquee({
   className = "",
   start = "top bottom",
   end = "bottom top",
+  triggerRef,
+  wordClassName = "text-marquee",
+  toXPercent = -60,
 }: MarqueeProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const wordRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const section = sectionRef.current;
+    const section = triggerRef?.current ?? sectionRef.current;
     const wordEl = wordRef.current;
     if (!section || !wordEl) return;
 
     // Not pinned — the section scrolls normally, only the word translates.
     const tween = gsap.to(wordEl, {
-      xPercent: -60,
+      xPercent: toXPercent,
       ease: "none",
       scrollTrigger: {
         trigger: section,
@@ -51,14 +65,14 @@ export function Marquee({
       tween.scrollTrigger?.kill();
       tween.kill();
     };
-  }, [start, end]);
+  }, [start, end, triggerRef, toXPercent]);
 
   return (
     <div
       ref={sectionRef}
       className={`w-full overflow-hidden whitespace-nowrap ${className}`}
     >
-      <span ref={wordRef} className="text-marquee inline-block">
+      <span ref={wordRef} className={`${wordClassName} inline-block`}>
         {word}
       </span>
     </div>

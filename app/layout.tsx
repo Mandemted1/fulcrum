@@ -5,6 +5,8 @@ import { SmoothScroll } from "@/components/smooth-scroll";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { PageTransitionOverlay } from "@/components/page-transition-overlay";
+import { Cursor } from "@/components/cursor";
 import { legalServiceSchema, attorneySchemas } from "@/lib/structured-data";
 
 const spaceGrotesk = Space_Grotesk({
@@ -23,7 +25,7 @@ const inter = Inter({
 
 const title = "Employment Lawyers for Employees | Fulcrum, NYC";
 const description =
-  "We represent employees only — discrimination, retaliation, severance and unpaid wages. Free 20-minute call with a lawyer. Attorney advertising.";
+  "We represent employees only: discrimination, retaliation, severance and unpaid wages. Free 20-minute call with a lawyer. Attorney advertising.";
 
 export const metadata: Metadata = {
   title,
@@ -57,6 +59,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           />
         ))}
         <SmoothScroll />
+        <PageTransitionOverlay />
+        <Cursor />
         <Header />
         {children}
         <Footer />

@@ -2,19 +2,19 @@ import { FadeUp } from "@/components/fade-up";
 
 const FEE_ITEMS = [
   {
-    title: "The first call — free, twenty minutes.",
+    title: "The first call: free, twenty minutes.",
     body: "You describe what happened, we tell you whether there's something there. No form, no intake questionnaire, no “case evaluation specialist.” You speak to a lawyer.",
   },
   {
-    title: "Contingency — 33⅓% before filing, 40% after.",
-    body: "For discrimination, retaliation and wage claims. You pay nothing unless we recover something. Case costs — filing fees, depositions, experts — come out of the recovery and we itemise every one. If we recover nothing, you owe nothing, including costs.",
+    title: "Contingency: 33⅓% before filing, 40% after.",
+    body: "For discrimination, retaliation and wage claims. You pay nothing unless we recover something. Case costs (filing fees, depositions, experts) come out of the recovery and we itemise every one. If we recover nothing, you owe nothing, including costs.",
   },
   {
-    title: "Severance review — flat fee, $1,800 to $3,500.",
+    title: "Severance review: flat fee, $1,800 to $3,500.",
     body: "Depends on the length and complexity of the agreement. You know the number before we start. For packages above roughly $150,000 we'll often do this on a percentage of the increase instead, which usually costs you less.",
   },
   {
-    title: "Hourly — $625 to $875.",
+    title: "Hourly: $625 to $875.",
     body: "Only where contingency doesn't fit: negotiations, advisory work, some executive matters. Billed in tenths, itemised, and we'll estimate the range before you commit.",
   },
 ];

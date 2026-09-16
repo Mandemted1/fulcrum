@@ -1,16 +1,18 @@
+// Prefixed with "/" so these still resolve correctly from other routes
+// (e.g. /team), not just when already on the homepage.
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Practices", href: "#practices" },
-  { label: "Team", href: "#team" },
-  { label: "Insights", href: "#insights" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Practices", href: "/#practices" },
+  { label: "Team", href: "/#team" },
+  { label: "Insights", href: "/#insights" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const PRACTICE_LINKS = [
-  { label: "Discrimination", href: "#practices" },
-  { label: "Retaliation", href: "#practices" },
-  { label: "Severance", href: "#practices" },
-  { label: "Wage and hour", href: "#practices" },
+  { label: "Discrimination", href: "/#practices" },
+  { label: "Retaliation", href: "/#practices" },
+  { label: "Severance", href: "/#practices" },
+  { label: "Wage and hour", href: "/#practices" },
 ];
 
 export function Footer() {

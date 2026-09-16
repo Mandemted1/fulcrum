@@ -4,12 +4,14 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { getLenisInstance } from "@/lib/lenis-instance";
 
+// Prefixed with "/" (not bare "#...") so these still resolve correctly
+// from other routes (e.g. /team), not just when already on the homepage.
 const NAV_ITEMS = [
-  { number: "01", label: "About", href: "#about" },
-  { number: "02", label: "Practices", href: "#practices" },
-  { number: "03", label: "Team", href: "#team" },
-  { number: "04", label: "Insights", href: "#insights" },
-  { number: "05", label: "Contact", href: "#contact" },
+  { number: "01", label: "About", href: "/#about" },
+  { number: "02", label: "Practices", href: "/#practices" },
+  { number: "03", label: "Team", href: "/#team" },
+  { number: "04", label: "Insights", href: "/#insights" },
+  { number: "05", label: "Contact", href: "/#contact" },
 ];
 
 const CLIP_CLOSED = "inset(0% 0% 0% 100%)";
@@ -144,7 +146,7 @@ export function Header() {
       </div>
 
       <div className="flex items-center justify-between px-6 py-4 md:px-16">
-        <a href="#" className="font-display text-xl font-bold tracking-tight">
+        <a href="/" className="font-display text-xl font-bold tracking-tight">
           FULCRUM
         </a>
 

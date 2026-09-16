@@ -1,3 +1,4 @@
+import { PaperCard } from "@/components/paper-card";
 import { FadeUp } from "@/components/fade-up";
 
 const RESULTS = [
@@ -34,37 +35,33 @@ const RESULTS = [
 export function Results() {
   return (
     <section id="results" className="bg-ink px-6 py-24 text-paper md:px-16">
-      <div className="mx-auto max-w-3xl">
-        <FadeUp>
-          <h2 className="text-display-lg mb-6">Some numbers.</h2>
-        </FadeUp>
+      <FadeUp>
+        <h2 className="text-display-lg mb-6 max-w-2xl">Some numbers.</h2>
+      </FadeUp>
 
-        {/* Compliance: this disclaimer must sit immediately before the
-            first figure, not at the bottom of the page. Never move it. */}
-        <FadeUp delay={0.1}>
-          <p className="text-body-lg mb-14 max-w-2xl text-paper/60">
-            Prior results do not guarantee a similar outcome. Every case
-            turns on its own facts. These are selected matters and are not a
-            representative sample.
-          </p>
-        </FadeUp>
+      {/* Compliance: this disclaimer must sit immediately before the
+          first figure, not at the bottom of the page. Never move it. */}
+      <FadeUp delay={0.1}>
+        <p className="text-body-lg mb-14 max-w-2xl text-paper/60">
+          Prior results do not guarantee a similar outcome. Every case turns
+          on its own facts. These are selected matters and are not a
+          representative sample.
+        </p>
+      </FadeUp>
 
-        <FadeUp delay={0.15}>
-          <dl className="flex flex-col">
-            {RESULTS.map((result) => (
-              <div
-                key={result.figure}
-                className="flex flex-col gap-1 border-t border-rule py-6 md:flex-row md:items-baseline md:justify-between md:gap-6"
-              >
-                <dt className="text-display-md">{result.figure}</dt>
-                <dd className="text-body-lg text-paper/60 md:text-right">
-                  {result.description}
-                </dd>
-              </div>
-            ))}
-            <div className="border-t border-rule" />
-          </dl>
-        </FadeUp>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
+        {RESULTS.map((result, i) => (
+          <PaperCard
+            key={result.figure}
+            index={i}
+            corner="none"
+            scrub
+            className="flex min-h-64 flex-col justify-between p-8 text-ink md:min-h-80 md:p-10"
+          >
+            <span className="text-display-lg">{result.figure}</span>
+            <span className="text-body text-ink/65">{result.description}</span>
+          </PaperCard>
+        ))}
       </div>
     </section>
   );

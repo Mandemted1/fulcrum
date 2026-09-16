@@ -22,15 +22,24 @@ Seven mechanics from the build brief. Nothing else.
 Marquee words translate on scrub — never pinned.
 Card rotations come from a SEEDED array, never Math.random().
 Recognition list never snaps.
-Sections 04 (qualifier) and 05 (deadlines) get a plain fade-up only.
+Section 05 (deadlines) gets a plain fade-up only.
 Phone numbers and the header render at final state, never animated.
 
 ## Never
 - No preloader of any kind
 - No scroll snapping or hijacking
-- No custom cursor
 - No localStorage or sessionStorage
 - No gradients except the brass CTA and footer panels
+
+## Custom cursor
+Overrides the earlier "no custom cursor" rule — approved for this project.
+A brass, clip-corner dot (echoes the PaperCard cut-corner motif) that lerps
+toward the real pointer position rather than snapping to it, and scales up
+over interactive elements. Fine-pointer devices only: detect via
+`matchMedia("(pointer: fine)")` and leave the native cursor alone otherwise
+(touch, trackpad-as-touch, reduced motion). Never hides the native cursor
+until the custom one has actually rendered a frame, so there's no dead gap
+before JS runs.
 
 ## Quality floor
 Fully usable with JavaScript disabled.

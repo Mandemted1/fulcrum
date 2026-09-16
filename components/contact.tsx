@@ -179,7 +179,7 @@ export function Contact() {
 
           <div className="md:col-span-2">
             <label htmlFor="contact-message" className="text-label mb-2 block">
-              What happened — as much or as little as you like
+              What happened: as much or as little as you like
             </label>
             <textarea
               id="contact-message"
@@ -202,7 +202,7 @@ export function Contact() {
           <p className="text-body mt-10 max-w-2xl">
             We reply within one business day. Sending this doesn&apos;t
             create an attorney-client relationship and it isn&apos;t
-            confidential until we&apos;ve agreed to act for you — so
+            confidential until we&apos;ve agreed to act for you, so
             don&apos;t include anything you wouldn&apos;t want read by
             someone who isn&apos;t yet your lawyer.
           </p>

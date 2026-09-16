@@ -7,7 +7,7 @@ const PRACTICES = [
     title: "Discrimination and Harassment",
     lead: "Danielle Osei-Bonsu",
     team: "6 lawyers",
-    body: "Race, sex, age, disability, pregnancy, religion, national origin, sexual orientation, gender identity. We file under the New York City Human Rights Law wherever we can — it's the broadest anti-discrimination statute in the country, and a claim that fails federally often survives under it.",
+    body: "Race, sex, age, disability, pregnancy, religion, national origin, sexual orientation, gender identity. We file under the New York City Human Rights Law wherever we can. It's the broadest anti-discrimination statute in the country, and a claim that fails federally often survives under it.",
     image: "/images/practices/discrimination.avif",
   },
   {
@@ -31,7 +31,7 @@ const PRACTICES = [
     title: "Wage and Hour",
     lead: "Aisha Rahman",
     team: "4 lawyers",
-    body: "Unpaid overtime, misclassification as exempt or as a contractor, stolen tips, unpaid commissions, off-the-clock work. New York's wage laws are unusually strong — liquidated damages can double what you're owed, and the lookback runs six years.",
+    body: "Unpaid overtime, misclassification as exempt or as a contractor, stolen tips, unpaid commissions, off-the-clock work. New York's wage laws are unusually strong. Liquidated damages can double what you're owed, and the lookback runs six years.",
     image: "/images/practices/wage-and-hour.avif",
   },
 ];

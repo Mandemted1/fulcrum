@@ -28,6 +28,16 @@
    * never drift out of proportion again.
    */
   --marquee-size: clamp(6rem, 22vw, 34rem);
+
+  /*
+   * TEAM's word already reads large at rest (roughly half the viewport
+   * width, matching the Ario reference) — the whole word then scales up
+   * together via GSAP transform during the pinned zoom (see
+   * team-zoom-marquee.tsx), growing past the viewport edges and on into a
+   * single letter's stroke, rather than starting small and needing a huge
+   * multiplier to compensate.
+   */
+  --marquee-size-team: clamp(6rem, 20vw, 19rem);
 }
 
 body {
@@ -75,6 +85,14 @@ section[id] {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--marquee-size);
+  letter-spacing: -0.04em;
+  line-height: 0.8;
+}
+
+.text-marquee-team {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--marquee-size-team);
   letter-spacing: -0.04em;
   line-height: 0.8;
 }

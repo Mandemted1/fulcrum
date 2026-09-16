@@ -97,7 +97,10 @@ We have never represented an employer. Not once, not as a favour, not on the sid
 
 ---
 
-## Section 04 — Should you call us?
+## Section 04 — Should you call us? (removed from the site)
+
+Cut from the live build — About now runs straight into Deadlines. Copy kept
+below in case it's reused elsewhere (an FAQ page, a blog post).
 
 The qualifier. Full brass field, ink type. The most valuable section on the site.
 
@@ -109,7 +112,7 @@ Unfair isn't the same as illegal.
 ```
 
 **Body:**
-Most people who contact an employment lawyer have been treated badly and have no legal claim. That's not a comment on you — it's what at-will employment means. In New York, an employer can fire you for a bad reason, a stupid reason, or no reason at all. They just can't fire you for a *protected* reason.
+Most people who contact an employment lawyer have been treated badly and have no legal claim. That's not a comment on you: it's what at-will employment means. In New York, an employer can fire you for a bad reason, a stupid reason, or no reason at all. They just can't fire you for a *protected* reason.
 
 Nobody in this industry says that up front, because every call is a potential fee. We'd rather you knew in ninety seconds than after three weeks of hoping.
 
@@ -137,7 +140,9 @@ If you're not sure which list you're on, that's exactly what the first call is f
 
 ## Section 05 — Deadlines
 
-Short, urgent, on black. Nobody publishes this and it is the most genuinely useful thing on the page.
+Short, urgent, on paper (moved off black when Section 04 was cut, to keep
+the ink/paper/brass rhythm from running three ink fields in a row). Nobody
+publishes this and it is the most genuinely useful thing on the page.
 
 **Eyebrow:** Time limits
 
@@ -181,7 +186,7 @@ done properly.
 **01 — Discrimination and Harassment**
 *Lead: Danielle Osei-Bonsu · 6 lawyers*
 
-Race, sex, age, disability, pregnancy, religion, national origin, sexual orientation, gender identity. We file under the New York City Human Rights Law wherever we can — it's the broadest anti-discrimination statute in the country, and a claim that fails federally often survives under it.
+Race, sex, age, disability, pregnancy, religion, national origin, sexual orientation, gender identity. We file under the New York City Human Rights Law wherever we can. It's the broadest anti-discrimination statute in the country, and a claim that fails federally often survives under it.
 
 **02 — Retaliation and Wrongful Termination**
 *Lead: Marcus Reyes · 4 lawyers*
@@ -196,7 +201,7 @@ Do not sign it yet. Severance is almost always negotiable, and the first offer i
 **04 — Wage and Hour**
 *Lead: Aisha Rahman · 4 lawyers*
 
-Unpaid overtime, misclassification as exempt or as a contractor, stolen tips, unpaid commissions, off-the-clock work. New York's wage laws are unusually strong — liquidated damages can double what you're owed, and the lookback runs six years.
+Unpaid overtime, misclassification as exempt or as a contractor, stolen tips, unpaid commissions, off-the-clock work. New York's wage laws are unusually strong. Liquidated damages can double what you're owed, and the lookback runs six years.
 
 ---
 
@@ -246,16 +251,16 @@ Nobody pays us to be told no.
 
 **Body:** Employment lawyers are notoriously vague about money. Here's ours.
 
-**The first call — free, twenty minutes.**
+**The first call: free, twenty minutes.**
 You describe what happened, we tell you whether there's something there. No form, no intake questionnaire, no "case evaluation specialist." You speak to a lawyer.
 
-**Contingency — 33⅓% before filing, 40% after.**
-For discrimination, retaliation and wage claims. You pay nothing unless we recover something. Case costs — filing fees, depositions, experts — come out of the recovery and we itemise every one. If we recover nothing, you owe nothing, including costs.
+**Contingency: 33⅓% before filing, 40% after.**
+For discrimination, retaliation and wage claims. You pay nothing unless we recover something. Case costs (filing fees, depositions, experts) come out of the recovery and we itemise every one. If we recover nothing, you owe nothing, including costs.
 
-**Severance review — flat fee, $1,800 to $3,500.**
+**Severance review: flat fee, $1,800 to $3,500.**
 Depends on the length and complexity of the agreement. You know the number before we start. For packages above roughly $150,000 we'll often do this on a percentage of the increase instead, which usually costs you less.
 
-**Hourly — $625 to $875.**
+**Hourly: $625 to $875.**
 Only where contingency doesn't fit: negotiations, advisory work, some executive matters. Billed in tenths, itemised, and we'll estimate the range before you commit.
 
 **What we never do.** Charge for the first call. Take a case we don't believe in because the fee is attractive. Or let a case sit because settling it is more profitable than trying it.
@@ -269,15 +274,15 @@ Scroll-driven focus list, the Ario mechanic — one item solid, the rest in pale
 **Eyebrow:** Recognition
 
 ```
-2026   Best Lawyers in America — Employment Law, Individuals
-2026   New York Super Lawyers — 6 attorneys listed
+2026   Best Lawyers in America: Employment Law, Individuals
+2026   New York Super Lawyers: 6 attorneys listed
 2025   Law360 Employment Practice Group of the Year, finalist
-2025   National Employment Lawyers Association — Advocate of the Year, D. Osei-Bonsu
-2025   New York Law Journal — Distinguished Leader
-2024   Best Lawyers in America — Employment Law, Individuals
-2024   NYC Bar Association — Pro Bono Service Award
-2023   New York Super Lawyers Rising Stars — 4 attorneys
-2023   Chambers USA — Band 3, Labor & Employment, New York
+2025   National Employment Lawyers Association: Advocate of the Year, D. Osei-Bonsu
+2025   New York Law Journal: Distinguished Leader
+2024   Best Lawyers in America: Employment Law, Individuals
+2024   NYC Bar Association: Pro Bono Service Award
+2023   New York Super Lawyers Rising Stars: 4 attorneys
+2023   Chambers USA: Band 3, Labor & Employment, New York
 2022   Law360 Rising Star, M. Reyes
 ```
 
@@ -340,7 +345,7 @@ Tell us what happened.
 | `Your name` | `Phone` |
 | `Email` | `Best time to reach you` ⌄ |
 | `What's this about?` ⌄ | `Has anything been filed or signed?` ⌄ |
-| `What happened — as much or as little as you like` *(textarea)* | |
+| `What happened: as much or as little as you like` *(textarea)* | |
 
 **About options:** Fired or demoted · Harassment · Discrimination · Severance agreement · Unpaid wages or overtime · Retaliation after complaining · Not sure
 
@@ -349,7 +354,7 @@ Tell us what happened.
 **Button:** `Send`
 
 **Under the form:**
-We reply within one business day. Sending this doesn't create an attorney-client relationship and it isn't confidential until we've agreed to act for you — so don't include anything you wouldn't want read by someone who isn't yet your lawyer.
+We reply within one business day. Sending this doesn't create an attorney-client relationship and it isn't confidential until we've agreed to act for you, so don't include anything you wouldn't want read by someone who isn't yet your lawyer.
 
 **Validation:**
 - Name: `We need a name to call you by.`
@@ -391,7 +396,7 @@ ATTORNEY ADVERTISING · © 2026 Fulcrum Employment Law PLLC · Prior results do 
 
 | Page | Title | Description |
 |---|---|---|
-| Home | Employment Lawyers for Employees \| Fulcrum, NYC | We represent employees only — discrimination, retaliation, severance and unpaid wages. Free 20-minute call with a lawyer. Attorney advertising. |
+| Home | Employment Lawyers for Employees \| Fulcrum, NYC | We represent employees only: discrimination, retaliation, severance and unpaid wages. Free 20-minute call with a lawyer. Attorney advertising. |
 | Should you call | Do You Have an Employment Claim? \| Fulcrum, NYC | An honest guide to what is and isn't illegal at work in New York, and when an employment lawyer is worth calling. |
 | Severance | Severance Agreement Review, NYC \| Fulcrum | Don't sign yet. Flat-fee review from $1,800, most matters resolved in 2–4 weeks. What's negotiable and what isn't. |
 | Fees | What an Employment Lawyer Costs in NYC \| Fulcrum | Contingency rates, flat fees for severance review, and hourly rates — published. No charge for the first call. |
